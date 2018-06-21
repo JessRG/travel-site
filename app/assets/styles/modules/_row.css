@@ -1,0 +1,46 @@
+.row {
+
+	@mixin clearfix;
+
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
+	}
+
+	/*This mixin handles the two column layout after the size of the screen has reached
+	  or exceeded the size specified in the mixin atMedium rule **check _mixins.css*/
+	@mixin atMedium {
+
+		&__b-margin-until-medium {
+			margin-bottom: 0;
+		}
+
+		/*For the following rules (&__medium-4 and &__medium-8), the floats must be cleared*/
+		&__medium-4 {
+			float: left;
+			width: 33.33%;
+		}
+
+		&__medium-4--larger {
+			width: 37%;
+		}
+
+		&__medium-8 {
+			float: left;
+			width: 66.66%;
+		}
+
+		&__medium-8--smaller {
+			width: 63%;
+		}
+	}
+
+	&--gutters {
+		margin-right: -65px;
+	}
+
+	/*This rule selects the element of class row--gutters descendents
+	  of element tag <div>*/
+	&--gutters > div {
+		padding-right: 65px;
+	}
+}

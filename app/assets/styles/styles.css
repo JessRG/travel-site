@@ -1,0 +1,14 @@
+/*This is the main css file that imports each of the individual css files for
+  specific sections of the web page. Each of the imported css files implement
+  nested css and take advantage of the Block Element Modifier methodology (BEM)*/
+@import "normalize.css";
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_btn";
+@import "modules/_wrapper";
+@import "modules/_page-section";
+@import "modules/_headline";
+@import "modules/_row";
+@import "modules/_generic-content-container";

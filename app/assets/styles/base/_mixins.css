@@ -1,0 +1,32 @@
+/*
+	This mixin css helps to handle both mobile-first, desktop, and laptop
+	presentation of elements within the html file.
+*/
+@define-mixin atSmall {
+	@media (min-width: 530px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (min-width: 1200px) {
+		@mixin-content;
+	}
+}
+
+/*this mixin adds empty content after any element of the class that
+  this mixin is placed within and clears any floats automatically
+  ** Example in _row.css file*/
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
