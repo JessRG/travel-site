@@ -1,23 +1,17 @@
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #333;
+  font-family: 'Roboto', sans-sarif;
+  color: #333;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-/*This rule is set globally and applies to every element on the HTML page.
-  Also, this makes management of width vales much easier (set it and forget it)*/
 * {
-	box-sizing: border-box; /*this has the web browser honor the declared width values in
-							  rules row__4 and row__8; this allows for the declared padding in
-							  rule row--gutters > div to not affect the calculated width values.
-							  The rules mentioned here are (&__4, &__8, and &--gutters > div)
-							  from app/assets/styles/modules/_row.css*/
+  box-sizing: border-box;
 }
 
 a {
-	color: $mainOrange;
+  color: $mainOrange;
 }
